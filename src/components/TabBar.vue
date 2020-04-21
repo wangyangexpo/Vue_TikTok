@@ -10,7 +10,7 @@
     <div class="item" @click="changeTab(3)">
       <router-link to="index" tag="span" :class="tabIndex==3?'active':''">消息</router-link></div>
     <div class="item" @click="changeTab(4)">
-      <router-link to="index" tag="span" :class="tabIndex==4?'active':''">我</router-link></div>
+      <router-link to="sign" tag="span" :class="tabIndex==4?'active':''">我</router-link></div>
   </div>
 </template>
 
@@ -46,7 +46,7 @@ export default {
     font-size: 16px;
     display: flex;
     /* 使用层级关系让被视频盖住的部分显示出来 */
-    z-index:999;
+    z-index:99;
   }
   .item{
     flex-grow: 1;

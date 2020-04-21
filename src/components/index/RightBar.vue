@@ -10,7 +10,7 @@
       <span class="iconfont icon-aixin"></span>
       <p>1w</p>
     </div>
-    <div class="item-icon">
+    <div class="item-icon" @click.stop="showCom($event)">
       <span class="iconfont icon-pinglun"></span>
       <p>1w</p>
     </div>
@@ -28,7 +28,17 @@
 
 <script>
 export default {
-
+  // VideoList.vue传过来的
+  props:["showComment"],
+  data(){
+    return {}
+  },
+  methods:{
+    showCom(e){
+      e.preventDefault();
+      this.$emit('changeCom',this.showComment);
+    }
+  }
 }
 </script>
 
