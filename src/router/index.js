@@ -10,7 +10,8 @@ const Sign = ()=> import('../views/Sign.vue')
 const tpsign = ()=> import('../views/tpsign.vue')
 const toast = ()=> import('../components/toast/toast.vue')
 const me = ()=> import('../views/me/me.vue')
-
+const edit = ()=> import('../views/me/edit.vue')
+const msg = ()=> import('../views/msg/msg.vue')
 
 Vue.use(VueRouter)
 
@@ -46,6 +47,11 @@ Vue.use(VueRouter)
         path:'/me',
         name:'me',
         component:me
+      },
+      {
+        path:'/msg',
+        name:'msg',
+        component:msg
       }
   ]
   },
@@ -63,6 +69,11 @@ Vue.use(VueRouter)
     path:'/toast',
     name:'toast',
     component:toast
+  },
+  {
+    path:'/edit',
+    name:'edit',
+    component:edit
   }
 ]
 

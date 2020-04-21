@@ -9,7 +9,7 @@
       <div class="me-content">
         <div class="info">
           <img src="../../assets/img/xxx.jpeg">
-          <button class="btn">编辑资料</button>
+          <router-link to="/edit"><button class="btn">编辑资料</button></router-link>
           <button class="btn">+朋友</button>
         </div>
         <div class="des">
@@ -31,9 +31,9 @@
 
       <div class="me-tab">
         <div class="me-navbar">
-          <div class="item" @click="changeTab(0)" :class="indexTab==0?'active':''">作品5</div>
-          <div class="item" @click="changeTab(1)" :class="indexTab==1?'active':''">动态5</div>
-          <div class="item" @click="changeTab(2)" :class="indexTab==2?'active':''">喜欢5</div>
+          <div class="item" @click="changeTab(0)" :class="indexTab==0?'active':''">作品3</div>
+          <div class="item" @click="changeTab(1)" :class="indexTab==1?'active':''">动态0</div>
+          <div class="item" @click="changeTab(2)" :class="indexTab==2?'active':''">喜欢0</div>
         </div>
         <div class="tab-wrap">
 
@@ -45,8 +45,8 @@
             </div>
           </div>
 
-          <div class="tab-con" v-show="indexTab==1">2</div>
-          <div class="tab-con" v-show="indexTab==2">3</div>
+          <div class="tab-con" v-show="indexTab==1">动态</div>
+          <div class="tab-con" v-show="indexTab==2">喜欢</div>
         </div>
       </div>
     </div>

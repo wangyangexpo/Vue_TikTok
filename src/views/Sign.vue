@@ -1,7 +1,7 @@
 <template>
   <div class="sign">
     <div class="sign-header">
-      <span class="icon">x</span>
+      <router-link to="/me" class="icon" >x</router-link>
       <span>帮助</span>
     </div>
     <div class="sign-content">

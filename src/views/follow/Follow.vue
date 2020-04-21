@@ -1,6 +1,6 @@
 <template>
   <div class="follow">
-    关注
+    同城页
   </div>
 </template>
 
