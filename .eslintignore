@@ -1,0 +1,11 @@
+# 忽略目录
+node_modules/
+build/
+dist/
+src/assets/iconfont
+
+# 忽略文件
+**/*.min.js
+**/*-min.js
+**/*.bundle.js
+src/styles/icomoon/style.css
