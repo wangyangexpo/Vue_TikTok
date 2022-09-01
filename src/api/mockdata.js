@@ -8,7 +8,6 @@ import Mock from 'mockjs';
 const getVideoUrl = (index) => {
   const urlArr = [
     '//www.w3schools.com/html/movie.mp4',
-    '//clips.vorwaerts-gmbh.de/big_buck_bunny.mp4',
     '//vjs.zencdn.net/v/oceans.mp4',
     '//www.w3school.com.cn/example/html5/mov_bbb.mp4',
   ];
