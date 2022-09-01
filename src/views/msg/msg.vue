@@ -23,7 +23,7 @@
 
       <div class="msg-list-box">
         <div class="msg-list">
-          <img src="../../assets/img/xxx.jpeg">
+          <img src="../../assets/img/xxx.jpeg" />
           <div class="user-des">
             <div class="top">
               <span>抖音小助手</span>
@@ -41,72 +41,70 @@
 </template>
 
 <script>
-import myHeader from '../../components/header/myHeader'
+import myHeader from '../../components/header/myHeader';
 export default {
-  components:{
-    myHeader
-  }
-}
+  components: {
+    myHeader,
+  },
+};
 </script>
 
 <style>
-  .msg-warp{
-    padding:0 20px;
-    color: #ffffff;
-    background-color: #101821;
-    /* height:-webkit-fill-available; */
-    height:1000px;
-  }
-  .msg-nav{
-    padding:20px 5px;
-    display: flex;
-    justify-content: space-between;
-
-  }
-  .msg-nav-item{
-    text-align: center;
-    width:60px;
-  }
-  .icon-box{
-    height:60px;
-    width:60px;
-    background-color:#ff4074;
-    border-radius: 5px;
-    margin-bottom: 5px;
-  }
-  .msg-list-box{
-    padding-top:30px;
-
-  }
-  .msg-list{
-    display: flex;
-    padding:10px 0;
-    /* justify-content: space-between; */
-  }
-  .msg-list img{
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-  }
-  .user-des{
-    flex: 1;
-    height:60px;
-  }
-  .user-des .top{
-    font-size: 14px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-    line-height: 25px;
-  }
-  .top-msg{
-    color: #666;
-    align-items: center;
-  }
-  .no-see{
-    width:8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color:#face15 ;
-  }
+.msg-warp {
+  padding: 0 20px;
+  color: #ffffff;
+  background-color: #101821;
+  /* height:-webkit-fill-available; */
+  height: 1000px;
+}
+.msg-nav {
+  padding: 20px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.msg-nav-item {
+  text-align: center;
+  width: 60px;
+}
+.icon-box {
+  height: 60px;
+  width: 60px;
+  background-color: #ff4074;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.msg-list-box {
+  padding-top: 30px;
+}
+.msg-list {
+  display: flex;
+  padding: 10px 0;
+  /* justify-content: space-between; */
+}
+.msg-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.user-des {
+  flex: 1;
+  height: 60px;
+}
+.user-des .top {
+  font-size: 14px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 25px;
+}
+.top-msg {
+  color: #666;
+  align-items: center;
+}
+.no-see {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #face15;
+}
 </style>

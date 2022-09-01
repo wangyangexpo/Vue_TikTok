@@ -4,7 +4,8 @@ import router from './router';
 import store from './store';
 import './plugins/vantui';
 import './plugins/index';
-import './plugins/rem';
+import './plugins/svg-icon';
+import './styles/common.css';
 
 // 自定义弹框
 import Toast from './components/toast/toast.js';

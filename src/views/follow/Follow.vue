@@ -1,15 +1,9 @@
 <template>
-  <div class="follow">
-    同城页
-  </div>
+  <div class="follow">同城页</div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>

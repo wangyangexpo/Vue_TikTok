@@ -1,21 +1,19 @@
 <template>
   <div class="home">
     <router-view />
-    <tab-bar></tab-bar>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import TabBar from '../components/TabBar'
+import AppFooter from '../components/footer';
 export default {
   name: 'Home',
-  data(){
-    return{
-
-    }
+  data() {
+    return {};
   },
   components: {
-    TabBar
-  }
-}
+    AppFooter,
+  },
+};
 </script>
