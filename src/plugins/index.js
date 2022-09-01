@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import moment from 'moment';
 
 // 注册focus指令
 Vue.directive('focus', {
@@ -10,6 +11,12 @@ Vue.directive('focus', {
       node.focus();
     }
   },
+});
+
+//  格式化日期
+Vue.filter('formatDate', (value, type = 'YYYY-MM-DD') => {
+  if (!value) return '';
+  return moment(value).format(type);
 });
 
 const SI = [

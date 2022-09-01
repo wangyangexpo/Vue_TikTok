@@ -6,6 +6,7 @@ const Home = () => import('../views/Home.vue');
 const Index = () => import('../views/index/Index.vue');
 const Follow = () => import('../views/follow/Follow.vue');
 const MySelf = () => import('../views/me/me.vue');
+const Share = () => import('../views/index/share.vue');
 
 Vue.use(VueRouter);
 
@@ -36,6 +37,11 @@ const routes = [
         component: MySelf,
       },
     ],
+  },
+  {
+    path: '/share/:id',
+    name: 'Share',
+    component: Share,
   },
 ];
 

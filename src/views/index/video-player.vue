@@ -25,7 +25,6 @@
 <script>
 import { videoPlayer } from 'vue-video-player';
 import 'video.js/dist/video-js.css';
-import * as VideoApi from '@api/video';
 
 export default {
   name: 'ShortVideo',
@@ -53,7 +52,6 @@ export default {
       duration: 0,
       playing: false,
       playTime: 0,
-      hasViewed: false,
       isError: false,
     };
   },
@@ -75,15 +73,6 @@ export default {
     },
     playerInstance() {
       return this.$refs.videoPlayer.player;
-    },
-  },
-  watch: {
-    playTime() {
-      if (this.playTime && this.playTime >= 1 && !this.hasViewed) {
-        // 只记录一次，不重复记录。
-        this.hasViewed = true;
-        VideoApi.setShortVideoRead({ id: this.videoData.id });
-      }
     },
   },
   methods: {

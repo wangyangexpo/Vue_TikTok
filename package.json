@@ -10,6 +10,7 @@
     "axios": "^0.27.2",
     "core-js": "^3.6.4",
     "html-webpack-inject-attributes-plugin": "^1.0.6",
+    "mockjs": "^1.1.0",
     "moment": "^2.24.0",
     "postcss-px-to-viewport": "^1.1.0",
     "swiper": "^5.3.7",

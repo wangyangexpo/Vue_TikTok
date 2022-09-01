@@ -57,7 +57,7 @@
 
 <script>
 import CommentContent from './comment-content-item.vue';
-import * as VideoApi from '@api/video';
+import VideoApi from '@api/video';
 
 export default {
   name: 'CommentList',

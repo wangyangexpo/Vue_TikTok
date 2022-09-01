@@ -7,13 +7,8 @@ import './plugins/index';
 import './plugins/svg-icon';
 import './styles/common.css';
 
-// 自定义弹框
-import Toast from './components/toast/toast.js';
-
 // 引入阿里图标库
 import './assets/iconfont/iconfont.css';
-// 挂载(链式)
-Vue.prototype.$toast = Toast;
 
 Vue.config.productionTip = false;
 

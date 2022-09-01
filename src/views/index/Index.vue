@@ -34,7 +34,7 @@
 <script>
 // 导入swiper组件'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
-import * as VideoApi from '@api/video';
+import VideoApi from '@api/video';
 import 'swiper/css/swiper.css';
 
 // 导入播放组件
@@ -124,7 +124,6 @@ export default {
     };
   },
   created() {
-    this.$toast({ message: 'ABCX' });
     this.getVideoList();
   },
   deactivated() {

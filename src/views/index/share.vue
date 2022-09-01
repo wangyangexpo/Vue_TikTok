@@ -34,7 +34,7 @@ import InfoBar from './info-bar';
 import RightBar from './right-bar';
 import VideoPlayer from './video-player';
 import CommentList from './comment-list';
-import * as VideoApi from '@api/video';
+import VideoApi from '@api/video';
 
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';

@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import * as VideoApi from '@api/video';
+import VideoApi from '@api/video';
 
 export default {
   name: 'InfoBar',
