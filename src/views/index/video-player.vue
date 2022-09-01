@@ -133,6 +133,7 @@ export default {
         this.playerInstance.pause();
       }
       this.isReady = false;
+      this.isError = false;
       this.playing = false;
     },
   },
@@ -210,15 +211,6 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
-  }
-}
-
-@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) {
-  .video-player-container {
-    .duration {
-      margin-bottom: constant(safe-area-inset-bottom);
-      margin-bottom: env(safe-area-inset-bottom);
-    }
   }
 }
 </style>

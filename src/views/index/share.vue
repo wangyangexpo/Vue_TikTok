@@ -134,8 +134,6 @@ export default {
 
   .video-swiper-slide {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     position: relative;
     .video-wrap {
       height: 100vh;
@@ -168,6 +166,20 @@ export default {
   .video-share {
     height: calc(100vh - constant(safe-area-inset-bottom));
     height: calc(100vh - env(safe-area-inset-bottom));
+    .video-swiper-slide {
+      height: calc(100vh - constant(safe-area-inset-bottom));
+      height: calc(100vh - env(safe-area-inset-bottom));
+
+      .video-wrap {
+        height: calc(100vh - constant(safe-area-inset-bottom));
+        height: calc(100vh - env(safe-area-inset-bottom));
+
+        &.collapsed {
+          height: calc(100vh - @commentHeight - constant(safe-area-inset-bottom));
+          height: calc(100vh - @commentHeight - env(safe-area-inset-bottom));
+        }
+      }
+    }
   }
   .video-share::after {
     content: '';
@@ -179,14 +191,6 @@ export default {
     background-color: #000;
     padding-bottom: constant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
-  }
-  .video-wrap {
-    height: calc(100vh - constant(safe-area-inset-bottom));
-    height: calc(100vh - env(safe-area-inset-bottom));
-  }
-  .video-swiper-slide {
-    height: calc(100vh - constant(safe-area-inset-bottom)) !important;
-    height: calc(100vh - env(safe-area-inset-bottom)) !important;
   }
 }
 </style>

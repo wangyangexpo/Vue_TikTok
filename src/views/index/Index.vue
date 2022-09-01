@@ -64,7 +64,7 @@ export default {
         direction: 'vertical',
         grabCursor: true,
         setWrapperSize: true,
-        autoHeight: true, // 自动高度。设置为true时，wrapper和container会随着当前slide的高度而发生变化
+        // autoHeight: true,
         slidesPerView: 1,
         mousewheel: true,
         mousewheelControl: true,
@@ -212,10 +212,8 @@ export default {
     background-color: #000;
 
     .video-swiper-slide {
-      padding-bottom: @foot-height;
       box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
+
       &.sliding {
         .video-wrap {
           /deep/ .video-player-container {
@@ -266,8 +264,6 @@ export default {
     height: calc(100vh - env(safe-area-inset-bottom));
     .video-swiper-container {
       .video-swiper-slide {
-        padding-bottom: calc(@foot-height + constant(safe-area-inset-bottom));
-        padding-bottom: calc(@foot-height + env(safe-area-inset-bottom));
         .video-wrap {
           height: calc(100vh - @foot-height - constant(safe-area-inset-bottom));
           height: calc(100vh - @foot-height - env(safe-area-inset-bottom));
