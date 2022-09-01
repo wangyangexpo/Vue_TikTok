@@ -6,6 +6,7 @@ import './plugins/vantui';
 import './plugins/index';
 import './plugins/svg-icon';
 import './styles/common.css';
+import 'normalize.css';
 
 // 引入阿里图标库
 import './assets/iconfont/iconfont.css';
