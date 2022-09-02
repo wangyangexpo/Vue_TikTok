@@ -1,6 +1,6 @@
 # 滑动播放短视频
 
-本项目基于 github 项目 [Vue_Douyin](https://github.com/SeptemberQiu/Vue_Douyin) 对原有视频播放模块进行二次开发；原项目作为示例 poc，只做了基本功能的视频 + 滑动播放组合，且在生产环境（真机调试）有很多未解决的 bug，本项目经过真实生产环境检验，修复了绝大部分遗留 bug，具体效果可以下载代码本地调试。
+本项目基于 github 项目 [Vue_Douyin](https://github.com/SeptemberQiu/Vue_Douyin) 对原有视频播放模块进行二次开发；原项目作为示例 poc，只做了基本功能的视频 + 滑动播放组合，且在生产环境（真机调试）有很多未解决的 bug，本项目经过真实生产环境检验，修复了绝大部分遗留 bug，解决了移动端安全区域遮挡等显示问题，具体效果可以下载代码本地调试。
 
 ```bash
 yarn install
