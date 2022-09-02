@@ -30,6 +30,18 @@ yarn run serve
 7. less style
 8. svg 图标（svg-sprite-loader）
 
+### 部分页面截图
+
+#### 视频滑动页
+
+<img src="./screenshot/home.png" width="390" height="850"/>
+
+<img src="./screenshot/comment.png" width="390" height="850"/>
+
+#### 视频分享页
+
+<img src="./screenshot/share.png" width="390" height="850"/>
+
 ### 如果觉得不错给个小星星
 
 有任何问题可以提 issue 讨论，欢迎交流；

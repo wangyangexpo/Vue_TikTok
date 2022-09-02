@@ -5,7 +5,7 @@
     <div class="edit-warp">
       <div class="ava-box">
         <div class="avatar">
-          <img src="../../assets/img/xxx.jpeg" alt="">
+          <img src="../../assets/image/xxx.jpeg" alt="">
           <span class="iconfont icon-xiangji"></span>
           <input type="file">
         </div>
@@ -51,17 +51,17 @@
 </template>
 
 <script>
-import myHeader from '../../components/header/myHeader'
+import myHeader from '../../components/header/myHeader';
 export default {
-  components:{
-    myHeader
+  components: {
+    myHeader,
   },
-  methods:{
-    toBack(){
-      this.$router.push('/me')
-    }
-  }
-}
+  methods: {
+    toBack() {
+      this.$router.push('/me');
+    },
+  },
+};
 </script>
 
 <style>

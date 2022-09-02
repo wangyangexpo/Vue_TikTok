@@ -8,7 +8,7 @@
     <div class="me-wrap">
       <div class="me-content">
         <div class="info">
-          <img src="../../assets/img/xxx.jpeg" />
+          <img src="../../assets/image/xxx.jpeg" />
           <router-link to="/edit"><button class="btn">编辑资料</button></router-link>
           <button class="btn">+朋友</button>
         </div>
@@ -38,9 +38,9 @@
         <div class="tab-wrap">
           <div class="tab-con" v-show="indexTab == 0">
             <div class="tab-img">
-              <img src="../../assets/img/0.jpg" alt="" />
-              <img src="../../assets/img/1.jpg" alt="" />
-              <img src="../../assets/img/2.jpg" alt="" />
+              <img src="../../assets/image/0.jpg" alt="" />
+              <img src="../../assets/image/1.jpg" alt="" />
+              <img src="../../assets/image/2.jpg" alt="" />
             </div>
           </div>
 
@@ -57,7 +57,7 @@ export default {
   data() {
     return {
       bgPic: {
-        backgroundImage: 'url(' + require('../../assets/img/bq.jpg') + ')',
+        backgroundImage: 'url(' + require('../../assets/image/bq.jpg') + ')',
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100% 100%',
       },

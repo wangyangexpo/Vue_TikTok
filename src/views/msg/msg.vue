@@ -23,7 +23,7 @@
 
       <div class="msg-list-box">
         <div class="msg-list">
-          <img src="../../assets/img/xxx.jpeg" />
+          <img src="../../assets/image/xxx.jpeg" />
           <div class="user-des">
             <div class="top">
               <span>抖音小助手</span>
