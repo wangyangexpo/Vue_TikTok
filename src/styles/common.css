@@ -1,0 +1,9 @@
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toast {
+  z-index: 9999;
+}
