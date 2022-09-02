@@ -69,8 +69,14 @@ export default {
         mousewheel: true,
         mousewheelControl: true,
         noSwipingClass: 'prevent-tap',
-        // 高度设置，占满设备高度
-        height: window.innerHeight,
+        /**
+         * 高度设置，占满设备高度，优先使用 document.documentElement.clientHeight；
+         * window.innerHeight 在首次获取时数值不准确，会比实际高度大一些；
+         * 具体原因查看：http://t.zoukankan.com/xiaoyucoding-p-7593864.html
+         */
+        height: document.documentElement
+          ? document.documentElement.clientHeight
+          : window.innerHeight,
         resistanceRatio: 0,
         observeParents: true,
         virtual: {
@@ -271,14 +277,6 @@ export default {
             height: calc(100vh - @commentHeight - constant(safe-area-inset-bottom));
             height: calc(100vh - @commentHeight - env(safe-area-inset-bottom));
           }
-        }
-        .infobar-warp {
-          padding-bottom: constant(safe-area-inset-bottom);
-          padding-bottom: env(safe-area-inset-bottom);
-        }
-        .right-warp {
-          padding-bottom: constant(safe-area-inset-bottom);
-          padding-bottom: env(safe-area-inset-bottom);
         }
       }
     }

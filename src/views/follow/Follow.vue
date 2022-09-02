@@ -7,7 +7,7 @@ export default {};
 </script>
 
 <style lang="less">
-@backgroundColor: #eee;
+@backgroundColor: #000;
 
 .follow {
   height: 100vh;
