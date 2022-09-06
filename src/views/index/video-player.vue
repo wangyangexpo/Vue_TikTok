@@ -103,6 +103,7 @@ export default {
         if (canplay) {
           this.isReady = true;
           this.duration = this.playerInstance.duration();
+          this.playerInstance.play();
         } else if (playing) {
           this.playing = true;
         } else if (timeupdate) {
@@ -123,7 +124,6 @@ export default {
       // 重新载入
       if (this.playerInstance) {
         this.playerInstance.load();
-        this.playerInstance.play();
       }
       this.playTime = 0;
       this.playing = true;
