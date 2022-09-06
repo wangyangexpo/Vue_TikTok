@@ -43,6 +43,10 @@ import RightBar from './right-bar';
 import VideoPlayer from './video-player';
 import CommentList from './comment-list';
 
+const SWIPER_HEIGHT = document.documentElement
+  ? document.documentElement.clientHeight
+  : window.innerHeight;
+
 export default {
   name: 'VideoList',
   components: {
@@ -74,9 +78,7 @@ export default {
          * window.innerHeight 在首次获取时数值不准确，会比实际高度大一些；
          * 具体原因查看：http://t.zoukankan.com/xiaoyucoding-p-7593864.html
          */
-        height: document.documentElement
-          ? document.documentElement.clientHeight
-          : window.innerHeight,
+        height: SWIPER_HEIGHT,
         resistanceRatio: 0,
         observeParents: true,
         virtual: {

@@ -18,6 +18,8 @@ yarn run serve
 - [x] `swiper slide` 在 `overflow：hidden` 场景下依然出现滚动效果（偶现）；
 - [x] 手机锁屏，切换应用到后台再回来，部分安卓机型视频播放卡住，需要点击 2 次屏幕才能触发播放；
 - [x] `window.innerHeight` 在首次进入页面，表现不一致的问题，改用 `document.documentElement.clientHeight` 解决；http://t.zoukankan.com/xiaoyucoding-p-7593864.html
+- [x] 手机侧滑返回，视频页面高度塌缩问题（document.documentElement.clientHeight 在侧滑返回取值不准确）；
+- [ ] this.player.videoWidth(), this.player.videoHeight()，在安卓机型获取不到值（未解决）；
 
 ### 涉及技术栈
 
